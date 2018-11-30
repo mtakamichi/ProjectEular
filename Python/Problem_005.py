@@ -13,8 +13,6 @@ def is_prime(n):
         return False
     return all(n % i for i in range(3, int(math.sqrt(n)) + 1, 2))
 
-#def elementwise_power
-
 N = 20
 Nl = np.arange(2, N+1, dtype=np.int64)
 Nl = Nl[:, np.newaxis]
