@@ -2,7 +2,6 @@
 % 
 % What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-tic;
 % init
 N = 20;
 Nl = [1:N]';
@@ -24,4 +23,3 @@ end
 % 
 pel = max(sum(ml,3),[],1);
 prod(pl.^pel)
-toc;
