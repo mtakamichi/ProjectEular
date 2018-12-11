@@ -1,2 +1,2 @@
-# ProjectEular
+# ProjectEuler
 Solutions of project Euler 
