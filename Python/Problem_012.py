@@ -14,7 +14,7 @@ while(True):
     # for the case of square triangle number
     if(abs(sqt**2 -t) <10e-6):
         numd-=1
-    if(numd>=10):
+    if(numd>=500):
         break
     n+=1
     print(t,sqt, numd)
