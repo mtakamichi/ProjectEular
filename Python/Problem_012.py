@@ -17,5 +17,4 @@ while(True):
     if(numd>=500):
         break
     n+=1
-    print(t,sqt, numd)
 print(t)
