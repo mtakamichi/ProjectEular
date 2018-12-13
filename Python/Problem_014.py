@@ -12,9 +12,9 @@ def Collatz(n):
     if(n<=1):
         return 1
     elif(n%2==0):
-        return 1+Collatz(int(n/2))
+        return 1+Collatz(n//2)
     else:
-        return 1+Collatz(int(3*n+1))
+        return 1+Collatz(3*n+1)
 
 cl = list(map(Collatz, range(0,1000000)))
 print(cl.index(max(cl)))
