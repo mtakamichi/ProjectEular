@@ -5,14 +5,10 @@ Problem 25
 What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
 '''
 
-pred=0
-curr=1
-succ=1
+pred, curr = 0, 1
 ind=1
-while(len(str(succ))<1000):
-    succ = pred + curr
-    pred = curr
-    curr = succ
+while(len(str(curr))<1000):
+    pred, curr = curr, pred+curr
     ind += 1
 
 print(ind)
