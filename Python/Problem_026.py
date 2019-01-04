@@ -15,4 +15,4 @@ def len_cycle(n):
 
 nl =  [x for x in range(3,1000) if x%2!=0 and x%5!=0]
 lcl = list(map(len_cycle, nl))
-print(lcl[lcl.index(max(lcl))])
+print(nl[lcl.index(max(lcl))])
