@@ -11,7 +11,7 @@ def len_cycle(n):
     for i in range(1,10000):
         if(nines % n == 0):
             return i
-        nines=int('9'+str(nines))
+        nines = nines*10+9
 
 nl =  [x for x in range(3,1000) if x%2!=0 and x%5!=0]
 lcl = list(map(len_cycle, nl))
