@@ -4,9 +4,10 @@
 Problem 31
 How many different ways can £2 be made using any number of coins?
 '''
+#import time
 from functools import lru_cache
 coins=[200,100,50,20,10,5,2,1]
-
+#start=time.time()
 @lru_cache(maxsize=1000000)
 def combi_of_coins(total, max_cp):
     if(total==0):
@@ -26,3 +27,4 @@ def combi_of_coins(total, max_cp):
 
 #combi_of_coins(a,b)は残額a，これまでの使用可能最大コインbでの組合せ数を返す
 print(combi_of_coins(200, 200))
+#print(time.time()-start)
