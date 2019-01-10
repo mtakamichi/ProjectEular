@@ -19,7 +19,7 @@ def product_of_multi_pandigit(pan, div):
         return product
     return 0
 
-# [Note] The products must be 4-digit. If we assume that
+# [Note] The products must be 4-digits. If we assume that
 # multiplicand < multiplier, their possible digits are (1,4) or (2,3).
 print(sum(set(
     [product_of_multi_pandigit(pan, div) 
