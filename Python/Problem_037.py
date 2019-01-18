@@ -29,4 +29,4 @@ while True:
     if len(nl) == 11:
         break
     i += 1
-print(nl)
+print(sum(nl))
