@@ -4,8 +4,6 @@
 Problem 37
 Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
 '''
-from itertools import takewhile
-
 def is_prime(n):
     if (n%2 == 0 and n>2) or n<=1:
         return False
@@ -28,5 +26,5 @@ while True:
         nl.append(i)
     if len(nl) == 11:
         break
-    i += 1
+    i += 2
 print(sum(nl))
