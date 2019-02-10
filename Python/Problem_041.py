@@ -13,11 +13,12 @@ def is_prime(n):
     return all(n % i for i in range(3, int(math.sqrt(n)) + 1, 2))
 
 pp_list = []
-for n in range(4, 10):
-    pl = permutations(range(1, n+1))
-    for p in pl:
-        a = int(''.join(map(str, p)))
-        if is_prime(a):
-            pp_list.append(a)
+# Since the pandigital numbers made by n=5, 6, 8, 9 are all divisible by 3, 
+# we need to serch only for the case of n=7.
+pl = permutations(range(1, 8))
+for p in pl:
+    a = int(''.join(map(str, p)))
+    if is_prime(a):
+        pp_list.append(a)
 
 print(max(pp_list))
