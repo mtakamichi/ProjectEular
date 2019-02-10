@@ -14,7 +14,7 @@ def is_prime(n):
 
 pp_list = []
 # Since the pandigital numbers made by n=5, 6, 8, 9 are all divisible by 3, 
-# we need to serch only for the case of n=7.
+# we only need to find the maximum prime number from the 7-pandigital numbers.
 pl = permutations(range(1, 8))
 for p in pl:
     a = int(''.join(map(str, p)))
