@@ -1,0 +1,34 @@
+2019-07-01 16:58:11+0900 [-] Log opened.
+2019-07-01 16:58:11+0900 [-] --> comet.handler.test.test_relay.EventRelayTestCase.test_interface <--
+2019-07-01 16:58:11+0900 [-] --> comet.handler.test.test_relay.EventRelayTestCase.test_name <--
+2019-07-01 16:58:11+0900 [-] --> comet.handler.test.test_relay.EventRelayTestCase.test_send_event <--
+2019-07-01 16:58:11+0900 [-] --> comet.handler.test.test_spawn.SpawnCommandProtocolTestCase.test_bad_process <--
+2019-07-01 16:58:11+0900 [-] --> comet.handler.test.test_spawn.SpawnCommandProtocolTestCase.test_good_process <--
+2019-07-01 16:58:11+0900 [INFO -] Running external command: C:\Windows\System32\CMD.EXE
+2019-07-01 16:58:11+0900 [-] Unhandled Error
+	Traceback (most recent call last):
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\trial\_asynctest.py", line 300, in _runFixturesAndTest
+	    self._wait(d)
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\trial\_asynctest.py", line 378, in _wait
+	    reactor.run()
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\base.py", line 1272, in run
+	    self.mainLoop()
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\base.py", line 1281, in mainLoop
+	    self.runUntilCurrent()
+	--- <exception caught here> ---
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\base.py", line 902, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\_pollingfile.py", line 81, in _pollEvent
+	    workUnits += resource.checkWork()
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\_pollingfile.py", line 135, in checkWork
+	    self.receivedCallback(dataBuf)
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\_dumbwin32proc.py", line 267, in <lambda>
+	    lambda data: self.proto.childDataReceived(1, data),
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\twisted\internet\protocol.py", line 640, in childDataReceived
+	    self.outReceived(data)
+	  File "C:\Users\miyata\Anaconda3\envs\pytorch\lib\site-packages\comet\handler\spawn.py", line 35, in outReceived
+	    (data.decode(self.STDOUT_ENCODING),))
+	builtins.UnicodeDecodeError: 'utf-8' codec can't decode byte 0x83 in position 140: invalid start byte
+	
+2019-07-01 16:59:21+0900 [-] Received SIGINT, shutting down.
+2019-07-01 16:59:21+0900 [-] Main loop terminated.
